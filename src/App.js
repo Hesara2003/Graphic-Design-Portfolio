@@ -6,6 +6,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 import Services from "./components/Services";
+import Timeline from "./components/Timeline";
+import WhyChooseUs from "./components/whyUs";
 import "./App.css";
 
 
@@ -15,7 +17,9 @@ const App = () => {
       <NavBar />
       <Hero />
       <Services />
+      <Timeline />
       <Projects />
+      <WhyChooseUs />
       <Testimonials />
       <Contact />
       <Footer />

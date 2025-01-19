@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -18,8 +19,11 @@ const NavBar = () => {
 
   const navItems = [
     { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
+    { name: 'Projects', href: '#Services' },
+    { name: 'Services', href: '#services' },
+    { name: 'Timeline', href: '#timeline' },
+    { name: 'Why Choose Us', href: '#whyUs' },
+    { name: 'Testimonials', href: '#Testimonials' },
     { name: 'Contact', href: '#contact' }
   ];
 
