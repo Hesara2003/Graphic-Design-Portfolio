@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ExternalLink, Github, Eye } from 'lucide-react';
+import project1 from '../img/Project 1.png';
+import project2 from '../img/Project 2.png';
+import project3 from '../img/Project 3.png';
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -10,7 +13,7 @@ const Projects = () => {
       title: 'Project One',
       category: 'Web Design',
       description: 'A detailed description of Project One, showcasing modern design principles and clean code.',
-      image: '/api/placeholder/600/400',
+      image: project1,
       detailedDescription: 'This is a more detailed description of Project One. It explains the project in greater depth, including the technology stack, features, and challenges faced during development.',
       technologies: ['React', 'Tailwind CSS', 'Node.js'],
       links: {
@@ -22,7 +25,7 @@ const Projects = () => {
       title: 'Project Two',
       category: 'Full Stack',
       description: 'This project focuses on performance and scalability with cutting-edge technology.',
-      image: '/api/placeholder/600/400',
+      image: project2,
       detailedDescription: 'A deeper look into Project Two. It explores scalability, performance optimizations, and challenges during deployment.',
       technologies: ['Next.js', 'PostgreSQL', 'GraphQL'],
       links: {
@@ -34,7 +37,7 @@ const Projects = () => {
       title: 'Project Three',
       category: 'AI/ML',
       description: 'An innovative project that integrates AI and machine learning for automated processes.',
-      image: '/api/placeholder/600/400',
+      image: project3,
       detailedDescription: 'Project Three uses AI and ML to automate processes, increasing efficiency and productivity. Learn more about its components and implementation here.',
       technologies: ['Python', 'TensorFlow', 'Flask'],
       links: {
@@ -87,7 +90,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className="py-24 bg-gradient-to-b from-gray-900 to-black text-white">
+    <section id="projects" className="py-24 bg-gradient-to-b from-black to-gray-900 text-white">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -181,7 +184,7 @@ const Projects = () => {
               animate="visible"
               exit="exit"
               onClick={e => e.stopPropagation()}
-              className="bg-gray-900 rounded-xl w-full max-w-3xl overflow-hidden shadow-2xl"
+              className="bg-gray-900 rounded-xl w-full max-w-5xl overflow-hidden shadow-2xl"
             >
               <div className="relative">
                 <img

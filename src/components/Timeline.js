@@ -72,7 +72,7 @@ const ProcessTimeline = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-gray-900 to-black py-24 overflow-hidden">
+    <section id='Timeline'className="bg-gradient-to-b from-gray-900 to-black py-24 overflow-hidden">
       <motion.div 
         className="max-w-6xl mx-auto px-4"
         variants={containerVariants}

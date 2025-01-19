@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
+import Sandil from '../img/Sandil.jpg';
+import Sandali from '../img/Sandali.jpg';
+import Malindu from '../img/Malindu.jpg';
+import Uvin from '../img/Uvin.jpg';
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -8,31 +12,40 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      role: "Marketing Director",
-      company: "TechCorp Inc.",
-      image: "/api/placeholder/100/100",
-      text: "Working with this designer was an absolute pleasure. Their attention to detail and creative approach brought our brand vision to life in ways we couldn't have imagined.",
+      name: "Sandil Perera",
+      role: "Computer Science Student",
+      company: "SLIIT.",
+      image: Sandil,
+      text: "He is one of my all time team member for uni projects and competitions, with an exceptional leadership ability and full of creativity he has unique passionate personality",
     },
     {
       id: 2,
-      name: "Michael Chen",
-      role: "Startup Founder",
-      company: "InnovateLab",
-      image: "/api/placeholder/100/100",
+      name: "Sandali Sandagomi",
+      role: "Computer Science Student",
+      company: "SLIIT.",
+      image: Sandali,
       text: "The level of professionalism and creativity exceeded our expectations. They didn't just design our website; they created an experience that our users love.",
     },
     {
       id: 3,
-      name: "Emma Thompson",
-      role: "Creative Director",
-      company: "Design Studio",
-      image: "/api/placeholder/100/100",
+      name: "Malindu Yasanjith",
+      role: "Computer Science Student",
+      company: "SLIIT.",
+      image: Malindu,
       text: "I've worked with many designers, but few have shown such dedication to understanding and elevating our brand. The results speak for themselves.",
     },
     {
       id: 4,
-      name: "David Rodriguez",
+      name: "Uvin Perera",
+      role: "Software Engineer",
+      company: "Pagero",
+      image:  Uvin,
+      text: "Their ability to translate complex ideas into beautiful, functional designs is remarkable. They're not just a designer; they're a strategic partner.",
+    },
+
+    {
+      id: 5,
+      name: "Hesara Perera",
       role: "Product Manager",
       company: "SaaS Platform",
       image: "/api/placeholder/100/100",

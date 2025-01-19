@@ -33,7 +33,7 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-gray-900 py-16 px-4">
+    <div id='contact' className="w-full min-h-screen bg-gray-900relative py-20 md:py-32 bg-gradient-to-b from-black via-gray-800 to-gray-900 overflow-hidden py-16 px-4">
       <motion.div
         variants={containerVariants}
         initial="hidden"
