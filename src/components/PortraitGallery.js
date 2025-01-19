@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ExternalLink, Plus, ArrowUpRight } from 'lucide-react';
+import Poster1 from '../img/Poster 1.jpeg';
+import Poster2 from '../img/Poster 2.jpeg';
+import Poster3 from '../img/Poster 3.jpeg';
 
 const PortfolioSection = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -11,7 +14,7 @@ const PortfolioSection = () => {
       id: 1,
       title: "Mobile App Design",
       category: "UI/UX",
-      image: "/api/placeholder/320/480",
+      image: Poster1,
       description: "Modern mobile application interface design",
       color: "rgb(168, 85, 247)" // Purple
     },
@@ -19,7 +22,7 @@ const PortfolioSection = () => {
       id: 2,
       title: "Event Poster",
       category: "Poster",
-      image: "/api/placeholder/320/520",
+      image: Poster2,
       description: "Creative event promotional poster",
       color: "rgb(59, 130, 246)" // Blue
     },
@@ -27,7 +30,7 @@ const PortfolioSection = () => {
       id: 3,
       title: "Banking App Interface",
       category: "UI/UX",
-      image: "/api/placeholder/320/440",
+      image: Poster3,
       description: "Digital banking experience design",
       color: "rgb(236, 72, 153)" // Pink
     }
